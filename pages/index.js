@@ -11,6 +11,9 @@ const Home = () => (
 
     <div className="text center">
       <h1 className="">Uskoro.</h1>
+      <p>
+        <a href="mailto:sajt10@protonmail.com">Kontakt</a>
+      </p>
     </div>
 
     <style jsx>{`
@@ -27,8 +30,22 @@ const Home = () => (
         bottom: -50px;
       }
 
+      a {
+        position: relative;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        transition: all 0.3s;
+      }
+      a:hover {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+      }
+
       .widget {
-        height: 100px;
+        height: 200px;
         width: 100%;
         overflow: hidden;
       }
@@ -63,7 +80,7 @@ const Home = () => (
         margin-top: 0px;
         font-weight: 400;
         font-size: 22px;
-        text-shadow: 2px 2px #363636;
+        //text-shadow: 2px 2px #363636;
       }
     `}</style>
 
